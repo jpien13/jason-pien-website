@@ -1,17 +1,16 @@
 import React from 'react'
-import { CTA } from './components';
-import { Footer, Blog, Header } from './containers';
+import { Navbar } from './components';
+import { About, Blog, Footer} from './containers';
 import './App.css';
 const App = () => {
-  <div className="App">
-    <div className="gradient__bg">
+  return (
+    <div className="App">
       <Navbar />
-      <Header />
-    </div>  
-    <CTA />
-    <Blog />
-    <Footer />
-  </div>
+      <About />
+      <Blog />
+      <Footer />
+    </div>
+  )
 }
 
 export default App
